@@ -1,0 +1,18 @@
+# nom du workflow
+name: Premier workflow
+# événement déclencheur du workflow
+on: 
+  - workflow_dispatch
+# liste des jobs à exécuter
+jobs:
+  premier_job:
+    runs-on: ubuntu-latest
+# liste des étapes à exécuter dans le job
+    steps:
+      - name: Dit bonjour
+        run: echo "Hello world"
+      - name: Dit au revoir
+        run: echo "Goodbye world"
+
+
+  

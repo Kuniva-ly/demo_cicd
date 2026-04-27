@@ -3,6 +3,7 @@ name: Premier workflow
 # événement déclencheur du workflow
 on: 
   - workflow_dispatch
+  - push
 # liste des jobs à exécuter
 jobs:
   premier_job:
@@ -13,6 +14,11 @@ jobs:
         run: echo "Hello world"
       - name: Dit au revoir
         run: echo "Goodbye world"
-
+# Deuxième job
+  deuxieme_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: etape 2
+        run: echo "This is the second job"
 
   
